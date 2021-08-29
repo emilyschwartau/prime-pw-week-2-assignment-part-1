@@ -25,10 +25,10 @@ console.log("adventurous", adventurous);
 let food = "Pizza from Red Wing Brewery";
 console.log("favorite food", food);
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
-let pets = 2;
+let pets = 1;
 console.log("number of pets", pets);
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-let friendsPets = 3;
+let friendsPets = 7;
 console.log("number of friends pets", friendsPets);
 // 11 - Add two pets to your `pets` variable
 pets += 2;
@@ -83,5 +83,14 @@ else {
 }
 console.log(mostPets);
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
-
+switch (mostPets) {
+  case pets: pets >= friendsPets
+  console.log(mostPets);
+    break;
+  case friendsPets: friendsPets >= pets
+  console.log(mostPets);
+      break;
+}
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
+mostPets = (pets >= friendsPets) ? pets : friendsPets
+console.log(mostPets);
