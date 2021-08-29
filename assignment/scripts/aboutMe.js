@@ -25,7 +25,7 @@ console.log("adventurous", adventurous);
 let food = "Pizza from Red Wing Brewery";
 console.log("favorite food", food);
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
-let pets = 1;
+let pets = 2;
 console.log("number of pets", pets);
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
 let friendsPets = 3;
@@ -38,17 +38,35 @@ const allowedPets = 5;
 console.log("allowed pets", allowedPets);
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!",
 // if it's not true, console log "How about we stay home?"
-
+if (adventurous) {
+  console.log("Adventures are great!");
+}
+else {
+  console.log("How about we stay home?");
+}
 
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
-
+if (luckyNumber === 2 && adventurous === true) {
+console.log("Roll the dice!");
+}
+else {
+  console.log("Don't gamble today.");
+}
 // 15 - Write a conditional that console logs "I can have more pets!"
 //if the value of `pets` is less than the value of `allowedPets`,
 // console logs "I have enough pets" if the value of `pets` is equal to the value of `allowedPets`,
 // and console logs "Oh no, I have too many pets!"
 // if the value of `pets` is greater than the value of `allowedPets`.
-
+if (pets < allowedPets) {
+console.log("I can have more pets!");
+}
+  if (pets === allowedPets) {
+    console.log("I have enough pets");
+  }
+    if (pets > allowedPets) {
+      console.log("Oh no, I have too many pets!");
+    }
 // STRETCH GOALS:
 
 // 16 - Make a variable called `mostPets` and a conditional that
@@ -56,7 +74,14 @@ console.log("allowed pets", allowedPets);
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
-
+let mostPets = pets || friendsPets;
+if (pets >= friendsPets) {
+  console.log(mostPets = pets);
+}
+else {
+  console.log(mostPets = friendsPets);
+}
+console.log(mostPets);
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
